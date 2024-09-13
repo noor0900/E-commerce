@@ -282,8 +282,8 @@
     height: 70%;
     background-color: rgba(0, 0, 0, 0.829);
     z-index: 1;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-top: 8px;
   }
 .sml h1{
     color: #fff;
@@ -305,6 +305,14 @@
   font-weight: bold;
   color:#ddd;
  } 
+.title{
+  color: #333;
+  text-align: center;
+  line-height: 1.3;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 30px;
+ }
   
   
   
