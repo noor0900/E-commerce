@@ -153,7 +153,7 @@ function checkout() {
     return acc + ele.qty
   },0);
 
-  const orderConfirmation = confirm(`Are you sure you want to checkout with \n total amount of $${totalPrice} \n total qty is ${totalqty} `);
+  const orderConfirmation = confirm(`Are You Sure You Want To Checkout With \n Total Amount of $${totalPrice} \n Total Quantity is ${totalqty} `);
 
   if (orderConfirmation) {
     console.log("order placed");
