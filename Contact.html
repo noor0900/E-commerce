@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./style/Contact.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="navbar-logo">
+          <a href="#">E-commerce Store</a>
+        </div>
+        <ul class="navbar-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./order.html">Order</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+
+      <section class="contact-section">
+        <h1>Contact Us</h1>
+    
+        <div class="contact-container">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>If you have any questions, feel free to reach out to us. We're here to help!</p>
+            <ul>
+              <li><strong>Email:</strong> support@mystore.com</li>
+              <li><strong>Phone:</strong> +1 (555) 123-4567</li>
+              <li><strong>Address:</strong> 123 MyStore St., City, Country</li>
+            </ul>
+          </div>
+    
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <form action="submit_form.php" method="POST">
+              <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+    
+              <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+    
+              <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+    
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+</body>
+</html>

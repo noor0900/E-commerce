@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    /* height: 100%; */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .navbar-logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-links li {
+    display: inline;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color:blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+    font-weight: bold;
+    
+  }
+  
+  .btn:hover {
+    background-color:#555;
+  }
+  .btn i {
+    margin-right: 20px;
+    font-size: 20px;
+    margin-left: -10px;
+  }  
+  .container {
+    display: flex;
+    height: 89.6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../back1.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  }
+  .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+  }
+  
+  .content {
+    color: #fff;
+    text-align: center;
+    z-index: 1; 
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-weight: bold;
+    /* z-index: 1; */
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+  }
+  
+  .cta-button {
+    padding: 15px 30px;
+    background-color: #e95aa1;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #ff1493;
+    color:#333;
+  }
+  
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    width: 80%;
+    margin-left: 10%;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+  } 
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .card-des {
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .card button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .card button:hover {
+    background-color: #218838;
+    color: #333;
+  }
+  
+  .sidebar {
+    width: 20%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    right: -300px;
+    top: 10%;
+    height: 100vh;
+    transition: 0.3s;
+    z-index: 1;
+  }
+  
+  .sidebar.right {
+    right: 0;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .item-details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .item-image img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    background-color: wheat;
+  }
+  
+  .item-title {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  
+  .remove-item {
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .item-price h4 {
+    font-size: 1rem;
+    ;
+  }
+  
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 20%;
+
+  }
+  
+  .quantity-button {
+    background-color: #ddd;
+    border: none;
+    padding: 7px 7px;
+    cursor: pointer;
+  }
+  
+  .quantity-button svg {
+    width: 12px;
+    height: 12px;
+    
+  }
+  
+  .checkout {
+    background-color: #ffc107;
+    color: #333;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-left: 23%;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+  }
+  
+  .checkout:hover {
+    background-color: #e0a800;
+    color:#ddd;
+
+  }
+.sml{
+    width: 100%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.829);
+    z-index: 1;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+.sml h1{
+    color: #fff;
+    text-align: center;
+    line-height: 1.3;
+  }
+  .sml p{
+    color: #fff;
+    text-align: center;
+    margin-top:-5px;
+  }
+ footer{
+  background-color: #333;
+  color: #fff;
+  padding: 20px 30px;
+  text-align: center;
+ font-size: 2rem;
+  width: 100%;
+  font-weight: bold;
+  color:#ddd;
+ } 
+  
+  
+  

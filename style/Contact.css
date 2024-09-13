@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .navbar-logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-links li {
+    display: inline;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  h1, h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .contact-section {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+  }
+  
+  .contact-info {
+    max-width: 400px;
+  }
+  
+  .contact-info ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  
+  .contact-info ul li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-form {
+    max-width: 500px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .submit-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .submit-btn:hover {
+    background-color: #218838;
+    color: #333;
+  }
+ 
